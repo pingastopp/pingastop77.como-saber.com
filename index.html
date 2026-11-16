@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuar</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.loader {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #eeeeee;
+  border-top: 2px solid #555555;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+p {
+  font-size: 13px;
+  margin-top: 15px;
+}
+a {
+  display: none;
+  color: #1769d2;
+  margin-top: 10px;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="loader"></div>
+<p>Cargando información...</p>
+
+<a id="continue"
+href="https://pingastop77.como-saber.com">
+Continuar a la página
+</a>
+
+<script>
+setTimeout(() => {
+  document.querySelector('.loader').style.display = 'none';
+  document.querySelector('p').textContent =
+    'La página está lista.';
+  document.getElementById('continue').style.display = 'block';
+}, 3000);
+</script>
+
+</body>
+</html>
