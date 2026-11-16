@@ -1,117 +1,41 @@
 
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bem-vindo | Pingastop77</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirección</title>
 <style>
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 22px;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg,#edf2ff,#f8f9fc);
-}
-
-.card {
-  width: 100%;
-  max-width: 390px;
-  background: white;
-  padding: 42px 25px;
-  border-radius: 24px;
-  text-align: center;
-  box-shadow: 0 15px 45px rgba(30,50,100,.10);
-}
-
-.tag {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 30px;
-  background: #e8f7ee;
-  color: #18834a;
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-h1 {
-  color: #202a44;
-  font-size: 32px;
-  margin: 25px 0 8px;
-}
-
-.name {
-  color: #315ce8;
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 22px;
-}
-
-p {
-  color: #687386;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.arrow {
-  font-size: 43px;
-  color: #315ce8;
-  margin: 20px 0;
-  animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  50% { transform: translateY(9px); }
-}
-
-.button {
-  display: block;
-  width: 100%;
-  padding: 19px 12px;
-  background: #315ce8;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  border-radius: 13px;
-  box-shadow: 0 7px 18px rgba(49,92,232,.25);
-}
-
-.footer {
-  margin-top: 23px;
-  font-size: 12px;
-  color: #a0a7b4;
-}
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+  }
+  .loader {
+    width: 58px;
+    height: 58px;
+    border: 5px solid #374151;
+    border-top-color: #38bdf8;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
 </style>
 </head>
 <body>
-
-<div class="card">
-  <span class="tag">BEM-VINDO</span>
-
-  <h1>Bem-vindo a</h1>
-  <div class="name">Pingastop77</div>
-
-  <p>Clique abaixo para mais informações</p>
-
-  <div class="arrow">↓</div>
-
-  <a class="button"
-     href="https://pingastop77.como-saber.com">
-     ACESSAR AGORA
-  </a>
-
-  <div class="footer">
-    Acesse o site para conhecer mais
-  </div>
-</div>
-
+  <div class="loader"></div>
+  <script>
+    setTimeout(() => {
+      window.location.replace(
+        "https://pingastop77.como-saber.com"
+      );
+    }, 3000);
+  </script>
 </body>
 </html>
