@@ -2,40 +2,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Redirección</title>
-<style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #111827;
-  }
-  .loader {
-    width: 58px;
-    height: 58px;
-    border: 5px solid #374151;
-    border-top-color: #38bdf8;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-  }
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111827;
+    }
+
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 5px solid #374151;
+      border-top: 5px solid #38bdf8;
+      border-radius: 50%;
+      animation: girar 0.8s linear infinite;
+    }
+
+    @keyframes girar {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
+
 <body>
+
   <div class="loader"></div>
+
   <script>
-    setTimeout(() => {
+    setTimeout(function() {
       window.location.replace(
         "https://pingastop77.como-saber.com"
       );
-    }, 3000);
+    }, 2000);
   </script>
+
 </body>
 </html>
