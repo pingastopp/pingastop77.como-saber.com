@@ -1,52 +1,117 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carregando</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bem-vindo | Pingastop77</title>
 <style>
+* { box-sizing: border-box; }
+
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background: #ffffff;
+  align-items: center;
+  padding: 22px;
   font-family: Arial, sans-serif;
-  color: #333;
+  background: linear-gradient(135deg,#edf2ff,#f8f9fc);
 }
-.loader {
-  width: 19px;
-  height: 19px;
-  border: 2px solid #eeeeee;
-  border-top: 2px solid #555555;
-  border-radius: 50%;
-  animation: spin .7s linear infinite;
+
+.card {
+  width: 100%;
+  max-width: 390px;
+  background: white;
+  padding: 42px 25px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(30,50,100,.10);
 }
-@keyframes spin {
-  to { transform: rotate(360deg); }
+
+.tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: #e8f7ee;
+  color: #18834a;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
+
+h1 {
+  color: #202a44;
+  font-size: 32px;
+  margin: 25px 0 8px;
+}
+
+.name {
+  color: #315ce8;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
 p {
-  font-size: 13px;
-  margin-top: 15px;
+  color: #687386;
+  font-size: 15px;
+  line-height: 1.6;
 }
-a {
-  color: #1769d2;
-  font-size: 13px;
-  margin-top: 10px;
+
+.arrow {
+  font-size: 43px;
+  color: #315ce8;
+  margin: 20px 0;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(9px); }
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 19px 12px;
+  background: #315ce8;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 13px;
+  box-shadow: 0 7px 18px rgba(49,92,232,.25);
+}
+
+.footer {
+  margin-top: 23px;
+  font-size: 12px;
+  color: #a0a7b4;
 }
 </style>
 </head>
 <body>
 
-<div class="loader"></div>
-<p>Carregando informações...</p>
+<div class="card">
+  <span class="tag">BEM-VINDO</span>
 
-<a href="https://pingastop77.como-saber.com">
-Continuar para o site
-</a>
+  <h1>Bem-vindo a</h1>
+  <div class="name">Pingastop77</div>
+
+  <p>Clique abaixo para mais informações</p>
+
+  <div class="arrow">↓</div>
+
+  <a class="button"
+     href="https://pingastop77.como-saber.com">
+     ACESSAR AGORA
+  </a>
+
+  <div class="footer">
+    Acesse o site para conhecer mais
+  </div>
+</div>
 
 </body>
 </html>
